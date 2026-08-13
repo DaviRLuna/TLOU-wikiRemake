@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+    font-family: pliant;
+}
+
+a{
+    font-size: 2rem;
+    color: white;
+}
+
+/*caixa utilizada para fazer o cabeçalho da página*/
+.cabeçalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 8px solid white;
+    border-radius: 30px;
+    box-shadow: 2px;
+    padding: 10px;
+    gap:200px;
+    height: 80px;
+    width:1200px;
+}
+
+/*caixa utilizada para organizar os elementos da pagina*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
