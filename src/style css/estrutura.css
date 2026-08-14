@@ -1,20 +1,31 @@
+@font-face {
+    font-family: 'tlou';
+    src: url(../assets/tlou/handwriting-black-draft_DEMO.otf);
+}
+
 body{
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(255, 0, 0);
-    font-family: pliant;
+    font-family: 'tlou';
 }
 
 a{
     font-size: 2rem;
     color: white;
+    font-family: 'tlou' ;
+}
+
+.header {
+    width: 100%;
 }
 
 /*caixa utilizada para fazer o cabeçalho da página*/
@@ -23,13 +34,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border: 8px solid white;
-    border-radius: 30px;
+    border-bottom: 1px solid white;
     box-shadow: 2px;
     padding: 10px;
     gap:200px;
     height: 80px;
-    width:1200px;
+    width: 100%;
 }
 
 /*caixa utilizada para organizar os elementos da pagina*/
@@ -38,4 +48,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 300px;
+    width: 1200px;
+    background-color: aqua;
+}
+
+article {
+    display: flex;
+    gap: 20px;
 }
