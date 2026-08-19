@@ -33,6 +33,7 @@ a{
 
 p{
     color: white;
+    font-family: "Changa One", sans-serif;
 }
 
 img{
@@ -41,6 +42,7 @@ img{
     object-fit: cover;
     display: block;
     border-radius: 20px;
+    box-shadow: 100px;
 }
 
 button{
@@ -62,12 +64,18 @@ section{
 
 .gradient{
     height: 100%;
-    width: 300%;
+    width: 700%;
+    overflow: hidden;
     mask-image: linear-gradient(to  
     left, rgb(0, 0, 0), transparent);
-    opacity: 1;
     top: 0;
     left: 0;
+}
+#img img{
+    opacity: 0;
+}
+#img img.visible{
+    opacity:1;
 }
 
 /*caixa utilizada para fazer o cabeçalho da página*/
