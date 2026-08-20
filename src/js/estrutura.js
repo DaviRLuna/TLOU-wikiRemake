@@ -13,7 +13,8 @@ max = img.length;
 function nextImage() {
     if(currentImageIndex === max) {
         currentImageIndex = 0;
-        img[currentImageIndex].classList.add("visible");}
+        img[currentImageIndex].classList.add("visible");
+    }
     img[currentImageIndex].classList.remove("visible");
     currentImageIndex++;
     console.log(currentImageIndex);

@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     gap: 50px;
     width: 100%;
+    overflow: hidden;
 }
 
 h1{
@@ -29,6 +30,14 @@ a{
     font-size: 2rem;
     color: white;
     font-family: 'tlou' ;
+    text-decoration: none;
+}
+
+a:hover{
+    font-size: 2.7rem;
+    color: #ff0000;
+    transition: 1.5s ease;
+    text-decoration: none;
 }
 
 p{
