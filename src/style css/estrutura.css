@@ -42,7 +42,6 @@ img{
     object-fit: cover;
     display: block;
     border-radius: 20px;
-    box-shadow: 100px;
 }
 
 button{
@@ -65,7 +64,6 @@ section{
 .gradient{
     height: 100%;
     width: 700%;
-    overflow: hidden;
     mask-image: linear-gradient(to  
     left, rgb(0, 0, 0), transparent);
     top: 0;
@@ -73,10 +71,16 @@ section{
 }
 #img img{
     opacity: 0;
+    display: none;
+    transition: 0.5s ease;
 }
 #img img.visible{
     opacity:1;
+    display: block;
+    transition: 0.5s ease;
+
 }
+
 
 /*caixa utilizada para fazer o cabeçalho da página*/
 .cabeçalho{

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrossel</title>
-
     <style>
        body{
         display: flex;
@@ -31,43 +30,23 @@
        }
     </style>
 </head>
-<body>
+<body id="corpo">
+    <header>
+        <section class="Boas-vindas" id="BoasVindas">
+            <h2>Boas vindas</h2>
+            <button id="entrar">ENTRAR</button>
+        </section>
+    </header>
     <div class="carrossel">
         <div class="container" id="img">
                 <img class="visible" src="https://images2.alphacoders.com/784/thumb-1920-784000.jpg">
                 <img src="https://levelingupyourgame.com/wp-content/uploads/2020/06/The-Last-of-Us-2-Review-Graphics-Scenery-and-Visuals-3-1024x427.jpg">
                 <img src="https://c4.wallpaperflare.com/wallpaper/739/954/443/the-last-of-us-2-video-games-playstation-4-artwork-post-apocalypse-hd-wallpaper-preview.jpg">
-                <img src="https://c4.wallpaperflare.com/wallpaper/362/829/247/the-last-of-us-video-games-ruin-concept-art-apocalyptic-artwork-horse-digital-art-wallpaper-preview.jpg">
-                <img src="https://p4.wallpaperbetter.com/wallpaper/650/228/911/postapocalyptic-artwork-lakes-1920x1080-nature-lakes-hd-art-wallpaper-preview.jpg">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO52de1Fh_7thSYvrORTII7N_lhjVhIQmsGa7fsrQ595csjScHD7maVqW6&s=10">
-                <img src="https://i.pinimg.com/736x/99/5f/13/995f13f038e1c3992ea44bae0718f3a3.jpg">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqDmzciPl1R6fAvifTtOVspOUNIIJ5FH5cOQTWMBIaAC9erLXkQVbH-0&s=10">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlz8Wy7d78V-zAdnC4hKzwm3ZNC9_dXTzzAgejCq1FQryonWR24ucVaao&s=10">
         </div>
     </div>
 
-    <script>
-        let time = 2000;
-
-        let currentImageIndex = 0,
-        Image = document.querySelectorAll("#img img");
-        max = Image.length;
-
-        function nextImage(){
-
-            currentImageIndex++; 
-
-            console.log(currentImageIndex);
+    <script src="../js/estrutura.js">
         
-            Image[currentImageIndex].classList.add("visible")        }
-
-        function start(){
-            setInterval(() => {
-                nextImage()
-            }, time)
-        }
-
-        window.addEventListener("load", start);
     </script>
 </body>
 </html>
