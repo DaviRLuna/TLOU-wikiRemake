@@ -11,7 +11,6 @@ body{
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    overflow: hidden;
 }
 
 h1{
@@ -137,4 +136,18 @@ section{
 article {
     display: flex;
     gap: 20px;
+}
+.avancar_retornar{
+    border: solid 2px black;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 7%;
+    gap: 100px;
+}
+.avancar_retornar p{
+    font-size: 3rem;
 }

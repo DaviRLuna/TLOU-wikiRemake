@@ -12,29 +12,40 @@
 <body>
     
     
-    <main class="header" id="corpo">
+    <header class="header" id="corpo">
 
         <section class="cabeçalho">
             <h1>THE LAST OF US</h1>
             <article>
                 <a href="../../index.html">Central</a>
-                <a href="src/pages/Historia.html">História</a>
                 <a>Personagens</a>
                 <a>Créditos</a>
                 <a>Prêmios</a>
             </article>
         </section>
-        
-        <section class="container">
+        </header>
+
+        <main>
+
+           <section class="container">
             <article>
-                <p></p>
+                <p id="texto">O início de The Last of Us acompanha a trágica transformação de Joel e o início de sua jornada de redenção ao lado de Ellie, em uma narrativa dividida entre o colapso do mundo e a busca por esperança. Em 2013, o surto devastador do fungo Cordyceps destrói a vida de Joel quando sua filha, Sarah, é morta por um soldado durante a fuga caótica. Vinte anos depois, em uma Boston devastada e controlada pela tirania militar da FEDRA, ele sobrevive como um contrabandista frio e amargurado ao lado de sua parceira, Tess. A dinâmica da dupla muda drasticamente quando eles aceitam uma missão de Marlene, líder dos rebeldes Vagalumes: contrabandear a jovem Ellie, de 14 anos, para fora da zona de quarentena em troca de um carregamento de armas roubadas. No caminho, Joel e Tess descobrem que a garota carrega uma mordida antiga e é imune à infecção, tornando-se a potencial chave para a cura da humanidade. O destino do trio é selado no prédio do Capitólio, onde encontram os contatos rebeldes mortos e Tess revela ter sido infectada em um confronto anterior. Ciente de que Ellie é a última esperança do mundo, Tess se sacrifica para atrasar o exército, obrigando Joel a assumir a promessa de levar a garota até o seu irmão, Tommy, iniciando uma das maiores jornadas dos videogames.</p>
             </article>
-            <article class="gradient"  id="img">
-                <img class="visible" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr0z0Bl0pX358kmBgX5sjmxY5qykECRXlpX-cepMDOiBjKZG9KmfCs61p9bf-aeoi1ALuRqQXoEPllBffbVHU3HWZMde-AjbDA2_wsFKdCR2L00OvynD_YerBl21ZvqoY2HcE81bL2nEJ2NLws9Dof1ujYL6DnhBjreB9_OtdGlBkqO_i_h7RPkDaiLA/s1366/The_Last_of_Us_S01_E01-19.jpg">
+            <article class="gradient">
+                <img class="visible"  id="img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr0z0Bl0pX358kmBgX5sjmxY5qykECRXlpX-cepMDOiBjKZG9KmfCs61p9bf-aeoi1ALuRqQXoEPllBffbVHU3HWZMde-AjbDA2_wsFKdCR2L00OvynD_YerBl21ZvqoY2HcE81bL2nEJ2NLws9Dof1ujYL6DnhBjreB9_OtdGlBkqO_i_h7RPkDaiLA/s1366/The_Last_of_Us_S01_E01-19.jpg">
             </article>
         </section>
         <audio id="meuAudio" loop preload="metadata" src="src/assets/Musics/08. All Gone.mp3"></audio>
     </main>
+
+    <footer class="container">
+        <article class="avancar_retornar" style="background-color: red; cursor: pointer;" onclick="Retroceder()">
+            <p><</p>
+        </article>
+        <article class="avancar_retornar" style="background-color: rgb(66, 186, 36); cursor: pointer;" onclick="Avancar()">
+            <p>></p>
+        </article>
+    </footer>
 
     <script src="../js/estruturaHistory.js"></script>
 </body>
