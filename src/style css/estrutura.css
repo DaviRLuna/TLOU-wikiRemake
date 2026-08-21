@@ -9,8 +9,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 1px;
     width: 100%;
+    overflow: hidden;
 }
 
 h1{
@@ -46,9 +47,8 @@ p{
 
 img{
     height: 100%;
-    width: 100%;
+    width: 95%;
     object-fit: cover;
-    display: block;
     border-radius: 20px;
 }
 
@@ -67,6 +67,8 @@ button{
 
 section{
     padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .gradient{
@@ -76,6 +78,7 @@ section{
     left, rgb(0, 0, 0), transparent);
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 #img img{
     opacity: 0;

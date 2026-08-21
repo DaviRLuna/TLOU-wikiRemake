@@ -7,26 +7,28 @@ CorpoPagina.classList.add("class-escondida");
 
 let time = 2000;
 let currentImageIndex = 0;
-const img = document.querySelectorAll("#img img");
-max = img.length;
+const img = document.querySelectorAll('#img img');
+const max = img.length;
+console.log(max);
 
 function nextImage() {
-    if(currentImageIndex === max) {
-        currentImageIndex = 0;
-        img[currentImageIndex].classList.add("visible");
-    }
-    img[currentImageIndex].classList.remove("visible");
-    currentImageIndex++;
-    console.log(currentImageIndex);
-    img[currentImageIndex].classList.add("visible");
+    setInterval(() => {
+        if(currentImageIndex == max - 1){
+            currentImageIndex = 0;
+            img[currentImageIndex].classList.add("visible");
+        } else{
+            img[currentImageIndex].classList.remove("visible");
+            console.log(currentImageIndex);
+            currentImageIndex++;
+            img[currentImageIndex].classList.add("visible");
+        }
+    }, time)
 }
 
 
 
 function start(){
-    setInterval(() => {
-        nextImage();
-    }, time);
+    nextImage();
 }
 
 Entrar.addEventListener('click', function(){
