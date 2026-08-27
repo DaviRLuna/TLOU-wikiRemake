@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'tlou';
     src: url(../assets/tlou/handwriting-black-draft_DEMO.otf);
@@ -34,7 +40,6 @@ a{
 }
 
 a:hover{
-    font-size: 2.7rem;
     color: #ff0000;
     transition: 1.5s ease;
     text-decoration: none;
@@ -142,15 +147,35 @@ article {
 }
 .avancar_retornar{
     border: solid 2px black;
-    border-radius: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
-    width: 7%;
-    gap: 100px;
+    height: 20px;
+    width: 10%;
+    gap: 50px;
+    margin: 10px;
 }
-.avancar_retornar p{
-    font-size: 3rem;
+#botao{
+    display: flex;
+    justify-content: space-between;
+
+}
+#historia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#historia h1{
+    font-size: 1.5rem;
+    color: rgb(255, 0, 0);
+    font-family: 'tlou';
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    margin: 0;
+    padding: 0;
 }

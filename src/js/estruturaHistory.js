@@ -3,18 +3,22 @@ const Imagem = document.getElementById("img");
 const Titulo = document.getElementById("titulo");
 
 let ParteHistoria = 0;
-
-function VerificarParte(){
-    let parteAtual = Historia[ParteHistoria];
+let parteAtual;
+function verificacao(){
+    parteAtual = Historia[ParteHistoria];
 
     Texto.innerText = parteAtual.texto;
     Imagem.src = parteAtual.imagem;
     Titulo.innerText = parteAtual.titulo;
-
-    if(parteAtual === Historia.length - 1){
+}
+function VerificarParte(){
+    if(ParteHistoria >= 8){
         ParteHistoria = 0;
     }
-
+    else if(ParteHistoria <0){
+        ParteHistoria = 7;
+    }
+verificacao()
     
 }
 
@@ -48,6 +52,21 @@ const Historia = [
         texto: "Ao chegarem à cidade, Ellie está visivelmente traumatizada pelos eventos do inverno e, enquanto avançam em direção ao hospital, quase morre afogada em um túnel inundado após o colapso de um veículo. Joel tenta reanimá-la, mas ambos são nocauteados por uma patrulha dos Vagalumes. Joel acorda no hospital e é recebido por Marlene, que revela que os médicos já estão preparando Ellie para a cirurgia; no entanto, para remover o fungo mutado e criar a vacina, eles precisam extrair o cérebro da garota, o que a matará. Recusando-se a perder outra filha, Joel quebra o acordo, mata os guardas e invade o centro cirúrgico, assassinando o médico cirurgião principal para resgatar Ellie desacordada. Na fuga pelo estacionamento, ele confronta e mata Marlene para garantir que os Vagalumes não os persigam. O jogo termina nos arredores da comunidade fortificada de Jackson, onde Ellie, desconfiada, confronta Joel sobre o que realmente aconteceu no hospital, e ele jura falsamente que os Vagalumes haviam desistido de procurar uma cura, com Ellie aceitando a mentira com um doloroso e resignado 'Ok'.",
         imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEIbJ8XzRX3Ef2wRWTqHocbN0gH0_jx51ZIFcevCFLz4VpuXCw7-HrfWe1&s=10",
         titulo: "Hospital Saint´s Mary"
+    },
+    {
+        texto: "Na sequência dos eventos em Salt Lake City, Joel e Ellie tentam reconstruir suas vidas na comunidade de Jackson, mas a relação entre eles permanece fria e distante devido à persistente desconfiança da garota sobre a verdade do hospital. Certo dia, durante uma patrulha sob forte nevasca, Ellie e Dina se abrigam em uma mansão abandonada e compartilham um momento íntimo, ao mesmo tempo em que Abby Anderson é salva de uma horda de infectados por Joel e Tommy, que a conduzem até o refúgio de seu grupo. Descobre-se então que Abby e seus companheiros são ex-integrantes dos Vagalumes vindos de Seattle em busca de vingança, transformando o resgate em uma emboscada cruel onde Ellie, imobilizada e impotente, é forçada a assistir Abby espancar brutalmente Joel até a morte com um taco de golfe. Dominada pelo luto, pela culpa e por uma fúria incontrolável após retornar a Jackson, Ellie decide que irá até o fim do mundo para caçar cada um dos responsáveis, culminando em sua tensa e firme conversa com Maria, a quem ela confronta diretamente para exigir cavalos e suprimentos, determinada a deixar a segurança da cidade e iniciar sua jornada de sangue rumo a Seattle.",
+        imagem: "https://img.goodfon.com/wallpaper/big/1/a7/the-last-of-us-the-last-of-us-part-2-tlou-tlou2.webp",
+        titulo: "O começo do fim..."
+    },
+    {
+        texto: "O primeiro dia de Ellie em Seattle começa com a chegada tensa à cidade ao lado de Dina, explorando os escombros da Zona Quarentena e o metrô infestado antes de encontrarem um refúgio seguro em um teatro abandonado. Após Dina passar mal e revelar que está grávida, Ellie decide prosseguir sozinha pela cidade devastada e infestada por infectados e soldados hostis da WLF (Frente de Libertação de Washington), rastreando pistas que a levam até o grupo de Abby. Ao longo do dia, ela explora locais icônicos como o tribunal e o canal, e acaba sendo capturada em uma armadilha, o que a força a matar seu primeiro humano daquela jornada e lidar com o peso moral disso, culminando no retorno ao teatro onde ela finalmente revela a gravidez de Dina para Jesse, que acaba de chegar à cidade para ajudá-las.",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHj1_V_i6ai5qT89UyLBdDTR9-siXqbEWO_WSngereq0StVn3lOR0Wfs&s=10",
+        titulo: "Dia I- Ellie"
+    },
+    {
+        texto: "",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHj1_V_i6ai5qT89UyLBdDTR9-siXqbEWO_WSngereq0StVn3lOR0Wfs&s=10",
+        titulo: "Dia I- Ellie"
     }
 ]
 
