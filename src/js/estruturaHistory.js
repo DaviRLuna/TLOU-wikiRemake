@@ -1,9 +1,11 @@
 const Texto = document.getElementById("texto");
 const Imagem = document.getElementById("img");
 const Titulo = document.getElementById("titulo");
+const Audio = document.getElementById("meuAudio")
 
 let ParteHistoria = 0;
 let parteAtual;
+
 function verificacao(){
     parteAtual = Historia[ParteHistoria];
 
@@ -125,3 +127,5 @@ function Retroceder(){
     window.scrollTo(0, 0);
     VerificarParte();
 }
+
+Audio.play();
