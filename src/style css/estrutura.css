@@ -206,11 +206,14 @@ article {
     margin: 20px;
 }
 .cards-perso-extendido{
-    height: 1000px;
-    width: 1000px;
+    height: 200px;
+    width: 1200px;
     border: 2px solid white;
     border-radius: 35px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+}
+.cards-perso-extendido img{
+    height: 100px;
+    width: 100px;
 }
