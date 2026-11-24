@@ -178,17 +178,18 @@ article {
 }
 
 .cards-perso{
-    height: 100px;
+    height: 150px;
     width: 150px;
-    border: 2px solid white;
-    border-radius: 35px;
+    border: 4px solid white;
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .cards-perso img{
     border-radius: 35px;
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 .cards-perso p{
